@@ -1,0 +1,5 @@
+"What is the first Absorption Law in Boolean algebra?","A + (A ⋅ B) = A","Absorption Law"
+"What is the second Absorption Law in Boolean algebra?","A ⋅ (A + B) = A","Absorption Law"
+"Why does A + (A ⋅ B) simplify to A?","Because if A is true, the whole expression is true regardless of B.","Absorption Law"
+"Why does A ⋅ (A + B) simplify to A?","Because if A is false, the whole expression is false regardless of B.","Absorption Law"
+"What is the benefit of using the Absorption Law?","It helps simplify Boolean expressions and optimize logic circuits.","Absorption Law"
