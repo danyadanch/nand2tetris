@@ -9,7 +9,6 @@
 "Commutative Laws #8: In practical terms, how can the Commutative Law help when drawing logic gate diagrams?","It allows reordering inputs to gates without affecting the overall logic, making circuit layouts more flexible.","nand2tetris:CommutativeLaws"
 "Commutative Laws #9: When might you use the Commutative Law in Boolean algebra proofs?","Whenever you want to reorder terms to align with a standard form or to combine like terms in further simplification steps.","nand2tetris:CommutativeLaws"
 "Commutative Laws #10: Does the Commutative Law apply to subtraction or division in ordinary arithmetic?","No. It applies to addition and multiplication in standard arithmetic, but not to subtraction or division. In Boolean algebra, it applies to AND and OR.","nand2tetris:CommutativeLaws"
-
 "Associative Laws #1: What does the Associative Law state in Boolean algebra?","It states that the grouping of operands in consecutive AND or OR operations does not affect the final result.","nand2tetris:AssociativeLaws"
 "Associative Laws #2: Give the formula for the Associative Law of AND in written notation.","x AND (y AND z) = (x AND y) AND z","nand2tetris:AssociativeLaws"
 "Associative Laws #3: Give the formula for the Associative Law of OR in written notation.","x OR (y OR z) = (x OR y) OR z","nand2tetris:AssociativeLaws"
@@ -20,7 +19,6 @@
 "Associative Laws #8: In logic gates, what does the Associative Law imply?","If you have multiple AND or OR gates in series, you can regroup them without changing the output.","nand2tetris:AssociativeLaws"
 "Associative Laws #9: Does the Associative Law allow mixing AND and OR interchangeably?","No. It applies to chains of AND operations or chains of OR operations separately, but does not let you swap AND with OR.","nand2tetris:AssociativeLaws"
 "Associative Laws #10: True or False: (x OR y) OR z is different from x OR (y OR z) in terms of output.","False. By the Associative Law, they are equivalent.","nand2tetris:AssociativeLaws"
-
 "Distributive Laws #1: State the Distributive Law of AND over OR in written notation.","x AND (y OR z) = (x AND y) OR (x AND z)","nand2tetris:DistributiveLaws"
 "Distributive Laws #2: State the Distributive Law of OR over AND in written notation.","x OR (y AND z) = (x OR y) AND (x OR z)","nand2tetris:DistributiveLaws"
 "Distributive Laws #3: How is the Distributive Law in Boolean algebra similar to arithmetic?","It mirrors the arithmetic property a×(b+c) = a×b + a×c, but uses AND/OR in place of multiplication/addition.","nand2tetris:DistributiveLaws"
@@ -31,7 +29,6 @@
 "Distributive Laws #8: How does the Distributive Law help in factorization of Boolean expressions?","It allows you to factor out a common variable from an OR or an AND, just like algebraic factorization.","nand2tetris:DistributiveLaws"
 "Distributive Laws #9: Why might the Distributive Law be useful for designing digital circuits?","It helps rearrange logic gates to reduce gate count or wiring complexity, thus optimizing circuit design.","nand2tetris:DistributiveLaws"
 "Distributive Laws #10: Fill in the blank: x OR (y AND z) = (x OR y) AND (___ OR z).","x","nand2tetris:DistributiveLaws"
-
 "De Morgan’s Laws #1: State the first De Morgan’s Law in written notation.","NOT(x AND y) = (NOT x) OR (NOT y)","nand2tetris:DeMorgansLaws"
 "De Morgan’s Laws #2: State the second De Morgan’s Law in written notation.","NOT(x OR y) = (NOT x) AND (NOT y)","nand2tetris:DeMorgansLaws"
 "De Morgan’s Laws #3: In words, what do De Morgan’s Laws say?","If you negate an AND expression, it becomes the OR of the negated variables. If you negate an OR expression, it becomes the AND of the negated variables.","nand2tetris:DeMorgansLaws"
@@ -47,7 +44,6 @@
 "DNF #3: Why is DNF considered a canonical form?","Because every Boolean expression can be systematically rewritten in DNF, making it a standard way to represent any Boolean function.","nand2tetris:DNF"
 "DNF #4: What does an 'elementary conjunction' in DNF consist of?","It is a set of one or more literals (each variable or its negation) combined with AND, representing a single row of the truth table where the function is TRUE.","nand2tetris:DNF"
 "DNF #5: Which basic logical operators are typically seen in a DNF expression?","A DNF expression uses OR to join multiple AND-clauses, where each AND-clause can contain variables or their negations (NOT).","nand2tetris:DNF"
-
 "Functional Completeness #1: Which basic operators are sufficient to express any Boolean function?","AND, OR, and NOT are functionally complete, meaning any Boolean function can be built from these three.","nand2tetris:FunctionalCompleteness"
 "Functional Completeness #2: Can any Boolean formula be expressed using only AND and NOT?","Yes. AND and NOT together form a functionally complete set, so OR can be derived if needed.","nand2tetris:FunctionalCompleteness"
 "Functional Completeness #3: Is NAND alone enough to express any Boolean formula?","Yes. NAND is also functionally complete; every Boolean function can be implemented with NAND gates only.","nand2tetris:FunctionalCompleteness"
@@ -56,7 +52,6 @@
 "Buses #2: How are multi-bit inputs and outputs defined in Hack HDL?","They use bracket notation (e.g., 'in[16]' or 'out[16]') to indicate the number of bits, similar to array syntax in programming.","nand2tetris:Buses"
 "Buses #3: How do we access or manipulate individual bits within a bus in Hack HDL?","Use an index in brackets (e.g., 'in[0]') to refer to a specific bit, or a range (e.g., 'in[7..0]') for a sub-bus.","nand2tetris:Buses"
 "Buses #4: What are multi-way gates and why are they useful?","They are gates (e.g., And4Way) that operate on several bits in parallel, letting you combine or process multiple inputs in one step.","nand2tetris:Buses"
-
 "Buses #5: What does it mean to have overlapping sub-buses in Hack HDL?","It means you can define multiple sub-ranges of the same bus that overlap each other, allowing different segments of the bus to be accessed or reused in various ways.","nand2tetris:Buses"
 "Buses #6: How are internal bus widths deduced in Hack HDL?","Internal pins get their width automatically from whatever bus is connected to them. There's no need to explicitly declare their width.","nand2tetris:Buses"
 "Buses #7: How can you fill an entire bus with 0s or 1s in Hack HDL?","You can connect a bus to 'false' (all bits = 0) or 'true' (all bits = 1) using these built-in HDL constants.","nand2tetris:Buses"
@@ -74,3 +69,4 @@
 "Why does A + (A ⋅ B) simplify to A?","Because if A is true, the whole expression is true regardless of B.","Absorption Law"
 "Why does A ⋅ (A + B) simplify to A?","Because if A is false, the whole expression is false regardless of B.","Absorption Law"
 "What is the benefit of using the Absorption Law?","It helps simplify Boolean expressions and optimize logic circuits.","Absorption Law"
+"What is the second Absorption Law in Boolean algebra with negative?","A + (NOT(A) * B) = A * B","Absorption Law"
