@@ -69,9 +69,10 @@
 "Why does A + (A ⋅ B) simplify to A?","Because if A is true, the whole expression is true regardless of B.","Absorption Law"
 "Why does A ⋅ (A + B) simplify to A?","Because if A is false, the whole expression is false regardless of B.","Absorption Law"
 "What is the benefit of using the Absorption Law?","It helps simplify Boolean expressions and optimize logic circuits.","Absorption Law"
-"What is the second Absorption Law in Boolean algebra with negative?","A + (NOT(A) * B) = A * B","Absorption Law"
 "What is the Consensus Theorem in Boolean Algebra?","The Consensus Theorem states that: \nAB + A'C + BC = AB + A'C\nIt eliminates the redundant term BC without changing the expression's value.","consensus_theorem"
 "What is the purpose of the Consensus Theorem in Boolean simplification?","The Consensus Theorem helps simplify Boolean expressions by removing redundant terms, making logical expressions more efficient in digital circuit design.","consensus_theorem"
 "How do you prove the Consensus Theorem?","1. Start with AB + A'C + BC.\n2. Introduce the identity A + A' = 1 to rewrite BC as BC(A + A').\n3. Expand: BC(A + A') = BCA + BCA'.\n4. Rearrange terms: AB + BCA + A'C + BCA'.\n5. Factor: B(A + CA') + A'C.\n6. Use Absorption Law: A + CA' = A + C.\n7. Simplify to AB + A'C, proving BC is redundant.","consensus_theorem"
 "Which Boolean simplification rule is used in the proof of the Consensus Theorem?","The Absorption Law, which states that A + CA' = A + C, is used to simplify the expression during the proof.","consensus_theorem"
-"Give an example of using the Consensus Theorem in Boolean simplification.","Expression: Y = AB + A'C + BC.\nApplying the Consensus Theorem, we eliminate BC:\nY = AB + A'C\nThis results in a simpler Boolean function, useful in digital circuit design.",
+"Give an example of using the Consensus Theorem in Boolean simplification.","Expression: Y = AB + A'C + BC.'\nApplying the Consensus Theorem, we eliminate BC:\nY = AB + A'C\nThis results in a simpler Boolean function, useful in digital circuit design.",
+"What is conditions for applying the Consensus Theorem?","The Consensus Theorem can be applied when you have three variables in expressions, each variable is repeated twice and one variable should present in complement form.","consensus_theorem"
+"What is complement form","!A is complement of A and A is complement of !A", "consensus_theorem"
