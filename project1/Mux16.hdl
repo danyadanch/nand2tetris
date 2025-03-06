@@ -1,0 +1,20 @@
+// This file is part of www.nand2tetris.org
+// and the book "The Elements of Computing Systems"
+// by Nisan and Schocken, MIT Press.
+// File name: projects/1/Mux16.hdl
+/**
+ * 16-bit multiplexor:
+ * for i = 0, ..., 15:
+ * if (sel = 0) out[i] = a[i], else out[i] = b[i]
+ */
+CHIP Mux16 {
+    IN a[16], b[16], sel;
+    OUT out[16];
+
+    PARTS:
+    Not(in=sel, out=invertedSel);
+    Not16(in=sel, out=inverted16Sel);
+    And16(a=inverted16Sel, b=a, out=firstPart);
+    And16(a=b, b[0...15]=sel, out=secondPart);
+    Or16(a=firstPart, b=secondPart, out=out);
+}

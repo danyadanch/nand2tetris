@@ -15,3 +15,4 @@ CHIP DMux {
     Not(in=sel, out=invertedSel);
     And(a=in, b=invertedSel, out=a);
     And(a=in, b=sel, out=b);
+}
